@@ -2,7 +2,7 @@
   width: 100%;
   height: 60px;
   padding-bottom: 1rem;
-  background: #e2e1a5;
+  background: linear-gradient(to right bottom, #734b6d, #42275a);
   box-shadow: 0 0 10px 1px;
   margin-bottom: 40px;
 }
