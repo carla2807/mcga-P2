@@ -20,7 +20,7 @@ const Routes = () => {
       </Route>
       <Route exact path="*">
         <Layout>
-          <h2>Not Found</h2>
+          <h2>Error Page</h2>
         </Layout>
       </Route>
     </Switch>
