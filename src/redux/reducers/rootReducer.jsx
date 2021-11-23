@@ -3,7 +3,7 @@ import studentReducer from './studentReducer';
 import modalReducer from './modalReducer';
 
 const rootReducer = combineReducers({
-  student: studentReducer,
+  students: studentReducer,
   modal: modalReducer,
 });
 
