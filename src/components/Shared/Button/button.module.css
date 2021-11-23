@@ -3,14 +3,5 @@
   background-color: #ffffff;
   border: 2px solid transparent;
   color: #565c88;
-  text-align: center;
-  padding: 1rem;
-  font-size: 1rem;
-  transition: all 0.5s;
   cursor: pointer;
-  margin: 36px;
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.3s;
 }

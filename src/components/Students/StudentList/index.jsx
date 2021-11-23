@@ -5,18 +5,22 @@ import TableBody from '@mui/material/TableBody';
 import TableCell from '@mui/material/TableCell';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
-import Paper from '@mui/material';
 import Student from '../Student';
 import styles from './studentList.module.css';
 
-const StudentList = ({ students, onDelete }) => {
+const StudentList = ({ students }) => {
   return (
     <div>
       {students.isLoading ? (
         <h3>Getting students...</h3>
       ) : (
-        <Paper className={styles.container}>
-          <Table sx={{ minWidth: 650 }} size="small" aria-label="a dense table">
+        <div className={styles.container}>
+          <Table
+            sx={{ minWidth: 650 }}
+            size="medium"
+            style={{ backgroundColor: '#EBF5FB' }}
+            aria-label="a dense table"
+          >
             <TableHead>
               <TableRow>
                 <TableCell className={styles.goalStudent}>Action</TableCell>
@@ -40,15 +44,11 @@ const StudentList = ({ students, onDelete }) => {
             </TableHead>
             <TableBody>
               {students.list.map((student) => (
-                <Student
-                  key={student._id}
-                  student={student}
-                  onDelete={onDelete}
-                />
+                <Student key={student._id} student={student} />
               ))}
             </TableBody>
           </Table>
-        </Paper>
+        </div>
       )}
     </div>
   );
