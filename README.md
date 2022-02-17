@@ -6,9 +6,10 @@ React App for students.The project was made for the second MCGA exam.
 
 ## Getting Started
 
--Clone the repository
+- Clone the repository
 
 git clone https://github.com/carla2807/mcga-P2.git
+
 cd mcga-P2
 
 - Make environment variable configuration in .env.local file
