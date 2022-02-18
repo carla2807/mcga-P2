@@ -1,12 +1,12 @@
-.Container {
-  width: 100%;
+.headerContainer {
+  width: 100vw;
 }
 
 .header {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
-  align-items: flex-start;
+  justify-content: space-between;
+  align-items: baseline;
   background-color: #2c2c48da;
 }
 
@@ -14,5 +14,42 @@
   color: white;
   cursor: pointer;
   text-decoration: none;
-  margin-left: 20px;
+  text-transform: uppercase;
+  padding: 0 1rem;
+}
+
+.loginButtons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.signIn {
+  cursor: pointer;
+  color: wheat;
+  font-size: 1.2rem;
+  padding-right: 0.5rem;
+}
+
+.signUp {
+  cursor: pointer;
+  color: wheat;
+  padding-right: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.logOut {
+  cursor: pointer;
+  color: white;
+  padding: 0 0.2rem;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.signIn:hover,
+.signUp:hover,
+.logOut:hover {
+  text-decoration: underline;
 }
